@@ -7,9 +7,10 @@ if (file_exists("/boot/config/plugins/corsairpsu/corsairpsu.cfg")) {
 
 if ($settings["TYPE"] == "corsairmi") {
 	$stdout = shell_exec('/usr/local/bin/corsairmi 2>&1');
+	//$stdout = file_get_contents("https://raw.githubusercontent.com/ashishpandey/corsairpsu-unraid/master/rmoutput-example.txt"); //- Debug Testing	
 } elseif ($settings["TYPE"] == "cpsumoncli") {
 	$stdout = shell_exec('/usr/local/bin/cpsumon/cpsumoncli ' . $settings["TTY"] . ' 2>&1');
-	//$stdout = file_get_contents("https://raw.githubusercontent.com/CyanLabs/corsairpsu-unraid/master/axoutput-example.txt"); //- Debug Testing	
+	//$stdout = file_get_contents("https://raw.githubusercontent.com/ashishpandey/corsairpsu-unraid/master/axoutput-example.txt"); //- Debug Testing	
 } else {
 	die("There is an error with your configuration!");
 }

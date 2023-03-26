@@ -1,0 +1,11 @@
+.dash_corsairpsu {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+#dash_corsairpsu_settings i, #dash_corsairpsu_toggle {margin-top:0px;}  
+.dash_corsairpsu_header {padding-top: 20px} 
+.dash_corsairpsu_section {
+    line-height:1.4em !important;
+    margin-left:-4px !important;
+}
+.dash_corsairpsu_table_header {text-decoration:underline;}
